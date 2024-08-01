@@ -30,13 +30,15 @@
     border-radius: 10px;
 }
 #about-btn{
-    width: 200px;
+    width: 150px;
     height: 36px;
-background: transparent;
+background-color: #f4ceb6;
 border: 5px;
 font-weight: bold;
 transition: 0.5s;
 cursor: pointer;
+border-radius: 20px;
+
 }
 #about-btn:hover{
     background-color: #b2744c;
