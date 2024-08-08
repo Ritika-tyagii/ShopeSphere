@@ -20,7 +20,7 @@
     font-weight:bold;
 }
 .heading span{
-    color:#b2744c;
+    color:blue;
 }
 #about .card {
     border-radius: 10px;
@@ -32,17 +32,18 @@
 #about-btn{
     width: 150px;
     height: 36px;
-background-color: #f4ceb6;
+background-color:blue;
 border: 5px;
 font-weight: bold;
 transition: 0.5s;
 cursor: pointer;
 border-radius: 20px;
+color: aliceblue;
 
 }
 #about-btn:hover{
-    background-color: #b2744c;
-    color: aliceblue;
+    background-color:lightblue;
+    color: black;
 }
 @media screen and (max-width:982px){
 
