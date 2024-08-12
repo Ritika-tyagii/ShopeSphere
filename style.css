@@ -84,7 +84,7 @@ border-radius: 20px;
 color: aliceblue;
 
 }
-#about-btn:hover{
+.btn:hover{
     background-color:lightblue;
     color: black;
 }
