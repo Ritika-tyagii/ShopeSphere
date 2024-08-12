@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping with ShopSphere</title>
+  <!--bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!--icon link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>                               
+<body>
+  <!--outer start-->                         
+  <div class="container-fluid">
+    <!--header start-->
+    <div class="row">                               
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html"><b><i>Shop <span style="color: blue;">Sphere</span></i></b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html"><i class="fa-solid fa-history"></i>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html"><i class="fa-solid fa-contact-book"></i>Contact</a>
+              </li>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search by Keyword" aria-label="Search">
+                <button class="btn bg-primary" type="submit"> Search</button> 
+              </form>
+               </ul>
+          </div> 
+        </div>
+      </nav>
+    </div>
+        
+<section id="featured" class="mt-5 py-5">
+    <div class="container text-center">
+      <h3>Our <span>Category</span></h3>
+      <hr>
+      <p>Here you can check out our products with fair price</p>
+    </div>
+    <div class="row mx-auto container-fluid d-flex">
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-2.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Beg</h5>
+        <h4 class="p-price">&#8377 1,500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-3.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Cap</h5>
+        <h4 class="p-price">&#8377 500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="shoes.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Shoes</h5>
+        <h4 class="p-price">&#8377 2,500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="redhoodie.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Hoodie</h5>
+        <h4 class="p-price">&#8377 3,000</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="beg.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Beg</h5>
+        <h4 class="p-price">&#8377 1,500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      
+     
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="hoodie.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Hoodie</h5>
+        <h4 class="p-price">&#8377 1,500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="denim.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Denim Shirt</h5>
+        <h4 class="p-price">&#8377 2,300</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="watch.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Watch</h5>
+        <h4 class="p-price">&#8377 5,000</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-17.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Crop Shirt</h5>
+        <h4 class="p-price">&#8377 750</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-10.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Foundation</h5>
+        <h4 class="p-price">&#8377 500</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-11.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Kajal</h5>
+        <h4 class="p-price">&#8377 1,000</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+     
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-9.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Lipstick</h5>
+        <h4 class="p-price">&#8377 800</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      
+
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-5.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Laptop</h5>
+        <h4 class="p-price">&#8377 50,000</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-6.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Mobile</h5>
+        <h4 class="p-price">&#8377 17,000</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3 w-90" src="p-7.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Mouse</h5>
+        <h4 class="p-price">&#8377 800</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="p-8.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+          <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+        </div>
+        <h5 class="p-name">Linear</h5>
+        <h4 class="p-price">&#8377 800</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+  </div> <div class="row">
+    <div class="col-12 my-auto">
+      <!-- top footer start    -->
+      <div class="row bg-dark text-light mt-5 py-5 ">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>About</h4>
+              <a href="contact.html" class="small nav-link">Contact us</a>
+              <a href="about.html" class="small nav-link"> About us </a>
+              <a href="" class="small nav-link">Careers</a>
+            </div>
+            <div class="col-sm-4"><h4>Help</h4>
+              <a href="" class="small nav-link">Payments</a>
+              <a href="" class="small nav-link">Shipping</a>
+              <a href="" class="small nav-link">Cancellation & Returns</a>
+              <a href="" class="small nav-link">FAQ</a>
+              <a href="" class="small nav-link">Report infringement</a>
+            </div>
+            <div class="col-sm-4"><h4>Consumer Policy</h4><br>
+              <a href="" class="small nav-link " style="text-decoration: none;">Cancellation& returns</a>
+              <a href="" class="small nav-link">Terms of use</a>
+               <a href="" class="small nav-link">Grievance Redressal</a>
+              <a href="" class="small nav-link">EPR Compliance</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="row">
+            <div class="col-sm-5">
+              <H4>Social:</H4>
+              <p>
+                <a href="chatbot.html" target="_blank" style="display: inline-block; color: white; text-decoration: none; margin: 10px;">
+                  <i class="fa-solid fa-robot"></i> 
+                </a>
+                <i class="fa-brands fa-x-twitter" style="margin: 5px;"> </i>
+                <i class="fa-brands fa-youtube" style="margin: 5px;"></i></p>
+            </div>
+
+            <div class="col-sm-5"> <h4>Requested Office Address:</h4>
+              <p>
+                Aaaaaaa,
+                xyz Road,ABC,
+                Bengaluru<br> Telephone:044-800
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- top footer end-->
+        <!-- lowerfooter start -->
+        <div class="row bg-light text-dark sticky-lg-bottom  d-flex flex-wrap">
+          <div class="col-3">
+            <a href="wishlist.html" target="_blank">
+            <i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div class="col-3">
+            <a href="index.html" target="_blank">
+            <i class="fa-solid fa-shop"></i></a>
+          </div>
+          <div class="col-3">
+            <a href="" target="_blank">
+            <i class="fa-solid fa-camera"></i></a>
+          </div>
+          <div class="col-3 ">
+            <a href="account.html" target="_blank">
+            <i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+        </div>
+        <!-- lowerfooter end-->
+      </div>
+    </div>
+  <!-- outer end-->
+<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+</body>
+</html>
