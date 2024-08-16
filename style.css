@@ -270,6 +270,8 @@ border-radius: 15px;
 .Wishlist_btn:hover{
     background:rgb(135, 193, 215);
 }
-
+i{
+    margin: 2px;
+}
 
 
