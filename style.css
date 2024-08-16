@@ -43,6 +43,9 @@ input[type="submit"] {
     border-radius: 10px;
 
 }
+.btn{
+    background: blue;
+}
 
 input[type="submit"]:hover{
     background-color: lightblue;
@@ -231,3 +234,42 @@ a{
     text-decoration:none;
     color: #000;
 }
+
+.sproduct select{
+   display: block; 
+   padding: 5px 10px;
+}
+.sproduct input{
+    width: 50px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sproduct input:focus{
+    outline: none;
+}
+.cart_btn{
+    background:#fb774b;
+    opacity:1;
+    transition: 0.3s all;
+padding: 2px;
+border-radius: 15px;
+}
+.cart_btn:hover{
+    background:rgb(16, 216, 16);
+}
+
+.Wishlist_btn{
+    background:rgb(14, 224, 14);
+    opacity:1;
+    transition: 0.3s all;
+padding: 2px;
+border-radius: 15px;
+}
+.Wishlist_btn:hover{
+    background:rgb(135, 193, 215);
+}
+
+
+
