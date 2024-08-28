@@ -278,7 +278,7 @@ i{
 .title{
     font-size: xx-large;
 }
-.container{
+.cartcontainer{
     width:900px;
     max-width: 90vw;
     margin: auto;
@@ -310,10 +310,10 @@ header{
     right: -10px;
     transition: 0.5s;
 }
-body.showCart .cartTab{
+.showCart .cartTab{
     insert:0 0 0 auto;
 }
-body .showCart{
+.showCart{
     transform: translateX(-250px);
 }
 .cartTab{
