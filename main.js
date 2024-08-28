@@ -1,4 +1,11 @@
+/*cart js*/
+let iconCart = document.querySelector('.icon-cart');
+let body = document.querySelector('body');
+iconCart.addEventListener('click', () =>{
+    body.classList.toggle('showCart')
+})
 
+/*chat boat js */
 let mic = document.getElementById("mic");
 let chatareamain = document.querySelector('.chatarea-main');
 let chatareaouter = document.querySelector('.chatarea-outer');

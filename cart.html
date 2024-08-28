@@ -14,7 +14,7 @@
     <!--css links-->
     <link rel="stylesheet" href="style.css">
 </head>                               
-<body class="">
+<body class="showCart">
     <div class="container" >
         <header>
             <div class="title">Shopping Cart</div>
@@ -29,15 +29,27 @@
     </div>
     <div class="cartTab">
         <h1>Shopping Cart</h1>
+        
         <div class="listCart">
-            
-        </div>
-        <div class="btn">
+            <div class="item">
+               <div class="image">
+                   <img src="shoes.jpg" alt="">
+               </div>
+               <div class="name">Shoes</div>
+               <div class="totalPrice">150</div>
+               <div class="quantity">
+                   <span class="minus"><</span>
+                   <span>1</span>
+                   <span>></span>
+               </div>
+            </div>
+       </div>
+        <div class="ch_btn">
             <button class="close">CLOSE</button>
             <button class="checkOut">Check Out</button>
         </div>
     </div>
 
-    <script src="cart.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
