@@ -297,7 +297,7 @@ header{
     border-radius: 50%;
     color: white;
     top: 50%;
-    right: -20px;
+    right: -15px;
 }
 .cartTab{
     width: 400px;
@@ -359,10 +359,8 @@ header{
 .listCart::-webkit-scrollbar{
     width: 0;
 }
-
-
 .showCart .cartTab{
-    inset: 0 0 0 auto;
+    inset: 0 0  0 auto;
     right: 0;
 }
 .showCart .container{
