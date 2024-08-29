@@ -295,14 +295,13 @@ crossorigin="anonymous"></script>
 <script>
   function searchProduct(event) {
     event.preventDefault(); 
-
     const searchInput = document.querySelector('#searchInput input[type="search"]').value.trim().toLowerCase();
     const productPages = {
         'fashion' : 'fashion.html',
         'electronic' : 'electronic.html',
         'makeup' : 'makeup.html',
         'cap': 'capdetails.html',
-        'laptop': 'laptopdetails.html',
+        'laptop': 'AllLaptopDetails.html',
         'kajal': 'AllKajalDetails.html', 
         'linear' : 'lineardetails.html',
         'mouse' : 'mousedetails.html',
@@ -316,7 +315,10 @@ crossorigin="anonymous"></script>
         'lipstick' : 'AllLipstickDetail.html',
         'cream' : 'fairAndLovely.html',
         'mask' : 'facialMask.html',
-        'shirt' : 'denimshirt.html'
+        'shirt' : 'AllShirtDetails.html',
+        'watch' : 'AllWatchDetails.html',
+        'beg' :'detail.html'
+
     };
     if (productPages[searchInput]) {
         window.location.href = productPages[searchInput];
