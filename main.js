@@ -4,6 +4,10 @@ let body = document.querySelector('body');
 iconCart.addEventListener('click', () =>{
     body.classList.toggle('showCart')
 })
+let closeCart = document.querySelector('.close');
+closeCart.addEventListener('click',()=>{
+    body.classList.toggle('showCart')
+})
 
 /*chat boat js */
 let mic = document.getElementById("mic");
