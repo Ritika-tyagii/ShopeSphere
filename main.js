@@ -1,5 +1,4 @@
-/*cart js*/
-//After clicking on  icon-cart  window will show
+/*cart js*///After clicking on  icon-cart  window will show
 let iconCart = document.querySelector('.icon-cart');
 let body = document.querySelector('body');
 iconCart.addEventListener('click', () =>{
@@ -10,6 +9,7 @@ let closeCart = document.querySelector('.close');
 closeCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 })
+
 
 let listProductHTML = document.querySelector('.listproduct');
 let carts =[];
@@ -25,9 +25,6 @@ for (var i=0; i< addToCart.length; i++){
     var button = addToCart[i];
     button.addEventListener("click",addToCartClicked);
 }              
-/*
-initApp(); */
-
 function updateCart() {
     let listCart = document.querySelector('.listCart');
     listCart.innerHTML = ''; 
