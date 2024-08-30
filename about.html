@@ -49,10 +49,9 @@
                                 <a class="nav-link active" href="contact.html"><i
                                         class="fa-solid fa-contact-book"></i>Contact</a>
                             </li>
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search by Keyword"
-                                    aria-label="Search">
-                                <button class="btn bg-primary" type="submit"> Search</button>
+                            <form class="d-flex" id="searchInput" role="search" onsubmit="searchProduct(event)">
+                                <input class="form-control me-2" type="search" placeholder="Search by Keyword" aria-label="Search">
+                                <button class="btn bg-primary" type="submit">Search</button>
                             </form>
                         </ul>
                     </div>
@@ -114,6 +113,48 @@
         </div>
       </div>
         </div>
+        <script>
+            function searchProduct(event) {
+              event.preventDefault(); 
+              const searchInput = document.querySelector('#searchInput input[type="search"]').value.trim().toLowerCase();
+              const productPages = {
+                  'fashion' : 'fashion.html',
+                  'electronic' : 'electronic.html',
+                  'makeup' : 'makeup.html',
+                  'cap': 'capdetails.html',
+                  'laptop': 'AllLaptopDetails.html',
+                  'kajal': 'AllKajalDetails.html', 
+                  'linear' : 'lineardetails.html',
+                  'mouse' : 'mousedetails.html',
+                  'headphone' : 'headphonedetails.html',
+                  'mobile' : 'AllPhoneDetails.html',
+                  'hoddie' : 'redhoodie.html',
+                  'jacket' : 'jacketdetails.html',
+                  'foundation' : 'foundationdetails.html',
+                  'eyeshadow' : 'eyeShadow.html',
+                  'earbud' : 'earbuddetails.html',
+                  'lipstick' : 'AllLipstickDetail.html',
+                  'cream' : 'fairAndLovely.html',
+                  'mask' : 'facialMask.html',
+                  'shirt' : 'AllShirtDetails.html',
+                  'watch' : 'AllWatchDetails.html',
+                  'beg' :'detail.html',
+                  'trouser' : 'trouserdetails.html',
+                  'soap' : 'soap.html',
+                  'shoes' : 'shoesdetail.html',
+                  'purse' : 'pursedetails.html',
+                  'muscara' : 'muscarra.html',
+                  'top' : 'AllTopDetails.html'
+          
+              };
+              if (productPages[searchInput]) {
+                  window.location.href = productPages[searchInput];
+              } else {
+                  alert('Product not found!');
+              }
+          }
+          
+          </script>
 </body>
 
 </html>
