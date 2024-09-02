@@ -366,3 +366,47 @@ header{
 .showCart .container{
     transform: translateX(-250px);
 }
+/* wishlist css  */
+ .wishlist-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .wishlist-item {
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .wishlist-item img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .wishlist-item h5 {
+      margin: 10px 0;
+    }
+
+    .wishlist-item .btn {
+      margin-top: 10px;
+      width: 100%;
+      background-color: blue;
+      color:black;
+      border: none;
+      padding: 10px 0;
+      border-radius: 5px;
+      cursor: pointer; 
+      
+    }
+
+    .wishlist-item .btn:hover {
+      background-color:lightblue;
+    }
+  
+
