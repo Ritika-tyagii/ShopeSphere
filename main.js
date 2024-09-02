@@ -1,4 +1,6 @@
-/*cart js*///After clicking on  icon-cart  window will show
+/*cart js*/
+
+//After clicking on  icon-cart  window will show
 let iconCart = document.querySelector('.icon-cart');
 let body = document.querySelector('body');
 iconCart.addEventListener('click', () =>{
@@ -10,7 +12,7 @@ closeCart.addEventListener('click',()=>{
     body.classList.toggle('showCart')
 })
 
-
+//to show alert 
 let listProductHTML = document.querySelector('.listproduct');
 let carts =[];
 listProductHTML.addEventListener ('click', (event) => {
@@ -28,8 +30,6 @@ for (var i=0; i< addToCart.length; i++){
 function updateCart() {
     let listCart = document.querySelector('.listCart');
     listCart.innerHTML = ''; 
-
-    
     cart.forEach((product, index) => {
         listCart.innerHTML += `
                      <div class="item">
@@ -41,7 +41,7 @@ function updateCart() {
                <div class="quantity">
                    <span class="minus"><</span>
                    <span>1</span>
-                   <span>></span>
+                   <span class="plus">></span>
                </div>
             </div>`;
     });
@@ -53,6 +53,24 @@ document.querySelectorAll('.cart_btn').forEach(button => {
         let image = productElement.querySelector('.image').src;
             alert('Product added to cart');
         addProductToCart(name, price, image, quantity);
+    });
+});
+// to decrease the  quantity 
+document.querySelectorAll('.quantity .minus').forEach(button => {
+    button.addEventListener('click', (event) => {
+        let index = event.target.dataset.index;
+        if (cart[index].quantity > 1) {
+            cart[index].quantity--;
+            updateCart();
+        }
+    });
+});
+// to increase the quantity 
+document.querySelectorAll('.quantity .plus').forEach(button => {
+    button.addEventListener('click', (event) => {
+        let index = event.target.dataset.index;
+        cart[index].quantity++;
+        updateCart();
     });
 });
 }
