@@ -11,7 +11,7 @@ iconCart.addEventListener('click', () => {
 let closeCart = document.querySelector('.close');
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
-});
+}); 
 
 // To show alert and add product to cart
 let cart = [];
