@@ -172,48 +172,7 @@
   <!-- Outer container end -->
 
   <!-- Search Script -->
-  <script>
-    function searchProduct(event) {
-      event.preventDefault(); 
-      const searchInput = document.querySelector('#searchInput input[type="search"]').value.trim().toLowerCase();
-      const productPages = {
-          'fashion' : 'fashion.html',
-          'electronic' : 'electronic.html',
-          'makeup' : 'makeup.html',
-          'cap': 'capdetails.html',
-          'laptop': 'AllLaptopDetails.html',
-          'kajal': 'AllKajalDetails.html', 
-          'linear' : 'lineardetails.html',
-          'mouse' : 'mousedetails.html',
-          'headphone' : 'headphonedetails.html',
-          'mobile' : 'AllPhoneDetails.html',
-          'hoddie' : 'redhoodie.html',
-          'jacket' : 'jacketdetails.html',
-          'foundation' : 'foundationdetails.html',
-          'eyeshadow' : 'eyeShadow.html',
-          'earbud' : 'earbuddetails.html',
-          'lipstick' : 'AllLipstickDetail.html',
-          'cream' : 'fairAndLovely.html',
-          'mask' : 'facialMask.html',
-          'shirt' : 'AllShirtDetails.html',
-          'watch' : 'AllWatchDetails.html',
-          'beg' :'detail.html',
-          'trouser' : 'trouserdetails.html',
-          'soap' : 'soap.html',
-          'shoes' : 'shoesdetail.html',
-          'purse' : 'pursedetails.html',
-          'muscara' : 'muscarra.html',
-          'top' : 'AllTopDetails.html'
-  
-      };
-      if (productPages[searchInput]) {
-          window.location.href = productPages[searchInput];
-      } else {
-          alert('Product not found!');
-      }
-  }
-  
-  </script>
+  <script src="searchBar.js"></script>
   <!-- Bootstrap JS link -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz4fnFO9gybBogGz5Pyb5Oe6pZQbsS3N5Yy0eg5G8i23G5/Stk5osK3Cm2" crossorigin="anonymous"></script>
