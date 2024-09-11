@@ -11,7 +11,7 @@ iconCart.addEventListener('click', () => {
 let closeCart = document.querySelector('.close');
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
-}); 
+});
 
 // To show alert and add product to cart
 let cart = [];
@@ -37,9 +37,8 @@ function updateCart() {
     let listCart = document.querySelector('.listCart');
     listCart.innerHTML = '';
     cart.forEach((product, index) => {
-        listCart.innerHTML +=  /*`
+        listCart.innerHTML +=  `
         <div class="item">
-               <div class="item">
                <div class="image">
                    <img src="shoes.jpg" alt="">
                </div>
@@ -50,21 +49,7 @@ function updateCart() {
                    <span>1</span>
                    <span class="plus">></span>
                </div>
-            </div>`;*/
-
-            `
-            <div class="item">
-                <div class="image">
-                    <img src="${product.image}" alt="">
-                </div>
-                <div class="name">${product.name}</div>
-                <div class="totalPrice">${product.price}</div>
-                <div class="quantity">
-                    <span class="minus" data-index="${index}"><</span>
-                    <span>${product.quantity}</span>
-                    <span class="plus" data-index="${index}">></span>
-                </div>
-            </div>`;
+            </div>`; 
 
         });
 
@@ -93,12 +78,13 @@ function updateCart() {
 document.querySelector(".Wishlist_btn").addEventListener("click", function () {
     addToWishlist(product);
 });
+
 function addToWishlist(product) {
     const wishlistItemHTML = `
         <div class="wishlist-item">
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price}</p>
+            <img src="shoes.jpg" alt="">
+            <h3>Shoes</h3>
+            <p>2,500</p>
             <button class="buy-now-btn"><i class="fa-solid fa-bag-shopping"></i>Buy Now</button>
         </div>
     `;
